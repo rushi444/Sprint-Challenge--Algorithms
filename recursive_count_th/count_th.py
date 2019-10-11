@@ -22,8 +22,6 @@ def count_th(word):
 
     if word[1:2] == 'h' and prev == 't':
         count += 1
-        prev = word[:1]
         return count + count_th(word[1:])
 
-    prev = word[:1]
     return count + count_th(word[1:])
